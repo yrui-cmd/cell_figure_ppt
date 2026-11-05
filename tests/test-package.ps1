@@ -34,7 +34,7 @@ foreach ($forbidden in @('FROZEN-MANIFEST.json', 'update-frozen-manifest.ps1')) 
 
 $plugin = Get-Content -LiteralPath (Join-Path $pluginRoot '.codex-plugin\plugin.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 if ($plugin.name -ne 'cell-ppt' -or $plugin.version -ne '0.2.0' -or $plugin.skills -ne './skills/' -or $plugin.license -ne 'MIT') { throw 'Plugin identity is invalid.' }
-if ($plugin.interface.displayName -ne 'Cell_ppt' -or $plugin.author.name -ne 'yrui-cmd') { throw 'Plugin display identity is invalid.' }
+if ($plugin.interface.displayName -ne 'cell_figure_ppt' -or $plugin.author.name -ne 'yrui-cmd') { throw 'Plugin display identity is invalid.' }
 if (Test-Path -LiteralPath (Join-Path $repoRoot '.agents\plugins\marketplace.json')) { throw 'Marketplace metadata must not be included.' }
 
 $runtime = Get-Content -LiteralPath (Join-Path $repoRoot 'runtime-lock.json') -Raw -Encoding UTF8 | ConvertFrom-Json

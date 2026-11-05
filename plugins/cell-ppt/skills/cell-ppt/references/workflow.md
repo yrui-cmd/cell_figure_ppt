@@ -1,4 +1,4 @@
-# Cell_ppt workflow
+# cell_figure_ppt workflow
 
 ## Image preparation
 

@@ -1,8 +1,8 @@
-# Cell_ppt
+# cell_figure_ppt
 
 Rebuild a scientific image as native editable PowerPoint paths and text while preserving everything already on the target slide.
 
-`Cell_ppt` records the original labels and positions, removes only the text from a working copy, recognizes the remaining graphic paths, restores live text, and writes objects in the source layer order. It removes only exact duplicate paths, preserving occlusion, transparency, and compound holes.
+`cell_figure_ppt` records the original labels and positions, removes only the text from a working copy, recognizes the remaining graphic paths, restores live text, and writes objects in the source layer order. It removes only exact duplicate paths, preserving occlusion, transparency, and compound holes.
 
 ## What you get
 
@@ -16,7 +16,7 @@ Rebuild a scientific image as native editable PowerPoint paths and text while pr
 
 Setup also installs or updates the independently open-source [cell_no_ai](https://github.com/yrui-cmd/cell_no_ai). After text cleanup, the user may choose to download its processed result before path recognition. Declining uses the verified cleaned image directly. This step is provided by a third-party service, so effectiveness depends on the returned file and subsequent verification.
 
-Cell_ppt supports Windows and macOS with one shared core pipeline:
+cell_figure_ppt supports Windows and macOS with one shared core pipeline:
 
 `text manifest → Image 2 text-only cleanup → optional hidden-watermark treatment and image download → Xiaomiao path-return SVG → editable text merge → one parse → duplicate-path removal → literal source order from back to front → native editable PPTX`
 
@@ -41,7 +41,7 @@ The user may provide the API key directly in chat. Codex must never repeat or di
 ## Windows install
 
 ```powershell
-git clone https://github.com/yrui-cmd/cell-ppt.git
+git clone https://github.com/yrui-cmd/cell_figure_ppt.git
 Set-Location .\cell-ppt
 powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
@@ -49,8 +49,8 @@ powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ## macOS install
 
 ```bash
-git clone https://github.com/yrui-cmd/cell-ppt.git
-cd cell-ppt
+git clone https://github.com/yrui-cmd/cell_figure_ppt.git
+cd cell_figure_ppt
 bash ./setup.sh
 ```
 

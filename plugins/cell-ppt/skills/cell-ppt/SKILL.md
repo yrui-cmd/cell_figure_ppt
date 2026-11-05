@@ -1,9 +1,9 @@
 ---
 name: cell-ppt
-description: Reconstruct PNG, JPEG, WebP, SVG, scientific figures, mechanism diagrams, graphical abstracts, and flowcharts as editable native objects in Microsoft PowerPoint on Windows or macOS. Use when the user asks for Cell_ppt, wants editable PPT/PPTX output instead of Adobe Illustrator, or needs editable paths, text boxes, arrows, and shapes. WPS Presentation support is experimental.
+description: Reconstruct PNG, JPEG, WebP, SVG, scientific figures, mechanism diagrams, graphical abstracts, and flowcharts as editable native objects in Microsoft PowerPoint on Windows or macOS. Use when the user asks for cell_figure_ppt, wants editable PPT/PPTX output instead of Adobe Illustrator, or needs editable paths, text boxes, arrows, and shapes. WPS Presentation support is experimental.
 ---
 
-# Cell_ppt
+# cell_figure_ppt
 
 Use this fixed workflow:
 
@@ -47,7 +47,7 @@ Read `runtime-profile.json` when present. If it is missing or the computer chang
 
 ## Fixed drawing rules
 
-Treat this section as the finalized drawing baseline. Do not reinterpret, relax, or override it unless the user explicitly asks to update `Cell_ppt` itself.
+Treat this section as the finalized drawing baseline. Do not reinterpret, relax, or override it unless the user explicitly asks to update `cell_figure_ppt` itself.
 
 - Convert every path retained by the duplicate-path filter to a native editable PowerPoint object. Use WPS only as an explicitly experimental backend.
 - Sole filtering rule: remove exact duplicate drawing paths only. Preserve every non-duplicate path, including invisible, fully covered, and partially visible paths.

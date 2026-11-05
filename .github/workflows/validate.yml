@@ -1,4 +1,4 @@
-name: Validate Cell_ppt
+name: Validate cell_figure_ppt
 
 on:
   push:

@@ -42,7 +42,7 @@ Get-ChildItem -LiteralPath $stageRoot -Recurse -File -Include '*.pyc','*.pyo','*
 }
 
 $releaseManifest = [ordered]@{
-    product = 'Cell_ppt'
+    product = 'cell_figure_ppt'
     version = $Version
     tag = "v$Version"
     createdUtc = [DateTime]::UtcNow.ToString('o')

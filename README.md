@@ -1,8 +1,8 @@
-# Cell_ppt
+# cell_figure_ppt
 
 把科研图片重建为 PowerPoint 里的原生可编辑路径和文字，同时保留原幻灯片已有内容。
 
-`Cell_ppt` 先记录文字和位置，只清除参考图里的文字，再识别图形路径、恢复可编辑文本，并按原图层级写入 PPTX。它只删除完全重复的路径，保留遮挡、透明叠加和复合镂空，避免用一块白色形状盖住画面。
+`cell_figure_ppt` 先记录文字和位置，只清除参考图里的文字，再识别图形路径、恢复可编辑文本，并按原图层级写入 PPTX。它只删除完全重复的路径，保留遮挡、透明叠加和复合镂空，避免用一块白色形状盖住画面。
 
 ## 你会得到
 
@@ -16,7 +16,7 @@
 
 安装时会同时安装或更新独立开源的 [cell_no_ai](https://github.com/yrui-cmd/cell_no_ai)。去字后，用户可以选择先接收其处理结果，再继续路径识别；拒绝时直接使用已经核对的去字图。第三方处理效果以服务返回和后续验证为准。
 
-Cell_ppt 支持 Windows 与 macOS，并保持同一套核心流程：
+cell_figure_ppt 支持 Windows 与 macOS，并保持同一套核心流程：
 
 `文字清单 → Image 2 仅清文字 → 可选 AI 隐藏水印处理并接收图片 → 小描路径返回 SVG → 合并可编辑文字 → 单次解析 → 清除重复路径 → 按源顺序从底层到顶层绘制 → 原生可编辑 PPTX`
 
@@ -48,7 +48,7 @@ Cell_ppt 支持 Windows 与 macOS，并保持同一套核心流程：
 直接把下面一句和 API Key 一起发给目标电脑的 Codex：
 
 ```text
-请安装 https://github.com/yrui-cmd/cell-ppt，并根据当前电脑自动匹配操作系统、Python、PowerPoint/WPS 与绘图后端；使用我在本条消息中提供的 API Key 完成安全配置，不要复述或显示密钥。安装、依赖、DPAPI/Keychain、认证验证和诊断全部由你完成，验证通过后使用 $cell-ppt 开始作图。
+请安装 https://github.com/yrui-cmd/cell_figure_ppt，并根据当前电脑自动匹配操作系统、Python、PowerPoint/WPS 与绘图后端；使用我在本条消息中提供的 API Key 完成安全配置，不要复述或显示密钥。安装、依赖、DPAPI/Keychain、认证验证和诊断全部由你完成，验证通过后使用 $cell-ppt 开始作图。
 ```
 
 允许在聊天中提供 API Key。Codex 必须只通过标准输入传给安装程序，不得复述，也不得写入命令行参数、环境变量、项目、日志或交付文件。安装程序会自动安装固定依赖、复制 Skill、生成 `runtime-profile.json`、选择可用后端、保存加密凭据并执行零额度认证验证。
@@ -56,7 +56,7 @@ Cell_ppt 支持 Windows 与 macOS，并保持同一套核心流程：
 ## Windows 安装
 
 ```powershell
-git clone https://github.com/yrui-cmd/cell-ppt.git
+git clone https://github.com/yrui-cmd/cell_figure_ppt.git
 Set-Location .\cell-ppt
 powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
@@ -70,8 +70,8 @@ powershell -ExecutionPolicy Bypass -File .\setup.ps1 -Force
 ## macOS 安装
 
 ```bash
-git clone https://github.com/yrui-cmd/cell-ppt.git
-cd cell-ppt
+git clone https://github.com/yrui-cmd/cell_figure_ppt.git
+cd cell_figure_ppt
 bash ./setup.sh
 ```
 
