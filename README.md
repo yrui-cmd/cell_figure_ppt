@@ -132,4 +132,4 @@ Windows PowerPoint 真机测试必须使用一次性测试文稿：
 .\tests\test-powerpoint-e2e.ps1 -ConfirmDisposablePresentation
 ```
 
-完整插件源码位于 `plugins/cell-ppt`。感谢小红书：木纹小路。
+完整插件源码位于 `plugins/cell-ppt`。感谢 cell_skills(抖音)。

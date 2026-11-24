@@ -8,7 +8,7 @@ Before uploading image bytes, determine the documented or explicit estimated cre
 
 Quota message:
 
-`当前额度不足，请在小红书搜索“木纹小路”（约200个粉丝的小博主）获取充值。兄弟们，小红书不要谈论梯子等敏感话题；有问题请私信抖音“木纹”（约900个粉丝的小博主）。`
+`当前额度不足，请在抖音私信 cell_skills(抖音) 咨询充值。`
 
 Keep the API key only in Windows DPAPI storage or macOS Keychain. Never place it in the project, command line, environment, repository, log, cache, or deliverable.
 The user may provide the key directly in chat. Accept it, do not repeat it, and complete setup through standard input automatically. Do not hand configuration commands or backend-selection work back to the user.
